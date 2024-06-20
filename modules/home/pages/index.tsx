@@ -23,7 +23,7 @@ const { endDate, from, peopleCount, startDate, to } = itineraryPlanner;
 
 export const HomePage = () => {
   return (
-    <main className="p-8 md:mx-auto md:w-[761px]">
+    <main className="p-4 md:mx-auto md:w-[761px] md:p-8">
       <TopPanel />
       <Galery images={images} mainImageUrl={mainImageUrl} />
       <ItineraryInfo
