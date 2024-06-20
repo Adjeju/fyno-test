@@ -48,7 +48,7 @@ const SecondStep = ({ regionHighlights, dailyPlanId }: SecondStepProps) => {
       </StepHeader>
       <StepContentWrapper>
         <div className="flex-1 py-8">
-          <Carousel className="sm:max-w-full">
+          <Carousel className="max-w-[400px] sm:max-w-[650px]">
             <CarouselContent>
               {regionHighlights.map(
                 ({
