@@ -9,7 +9,7 @@ import {
 import { Plus } from "lucide-react";
 
 export const TopPanel = () => (
-  <div className="mb-6 flex items-center justify-between">
+  <section className="mb-6 flex items-center justify-between">
     <div className="title-base flex h-8 rounded-2xl border">
       <div className="border-r px-4 py-1">Trips</div>
       <div className="border-r px-4 py-1">Iceland</div>
@@ -31,5 +31,5 @@ export const TopPanel = () => (
     <Button variant="outline" size="sm" className="title-base rounded-3xl">
       <Plus className="mr-2 h-4 w-4" /> Create
     </Button>
-  </div>
+  </section>
 );

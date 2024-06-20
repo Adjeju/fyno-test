@@ -16,11 +16,7 @@ export const CardContent = ({ children }: PropsWithChildren) => (
 );
 
 export const CardImage = ({ imgUrl }: { imgUrl: string }) => (
-  <img
-    src={imgUrl}
-    alt="img"
-    className="h-[292px] w-[216px] rounded-2xl object-cover"
-  />
+  <img src={imgUrl} alt="img" className="h-[292px] rounded-2xl object-cover" />
 );
 
 export const Card = ({ isCuratorsPick, children }: Props) => {

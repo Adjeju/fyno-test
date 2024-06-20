@@ -31,12 +31,12 @@ export const ThirdStep = ({ hotels }: Props) => (
       <div className="text-xl font-semibold">Where to stay</div>
     </StepHeader>
     <StepContentWrapper hideLine>
-      <div className="py-4">
-        <Carousel className="w-full max-w-[650px]">
+      <div className="w-full py-4">
+        <Carousel className="max-w-[400px] sm:max-w-[650px]">
           <CarouselContent>
             {hotels.map(
               ({ id, imgUrl, isCuratorsPick, title, price, rating, type }) => (
-                <CarouselItem key={id} className="basis-1/3">
+                <CarouselItem key={id} className="basis-1/2 md:basis-1/3">
                   <Card isCuratorsPick={isCuratorsPick}>
                     <CardImage imgUrl={imgUrl} />
                     <CardContent>

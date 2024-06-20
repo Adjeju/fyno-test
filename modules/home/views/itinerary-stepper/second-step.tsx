@@ -34,7 +34,7 @@ const SecondStep = ({ regionHighlights, dailyPlanId }: SecondStepProps) => {
         <StepNode>
           <Sparkles className="h-4 w-4" />
         </StepNode>
-        <div className="flex flex-1 items-center justify-between">
+        <div className="flex flex-1 items-center justify-between gap-2">
           <div className="title">Region highlights</div>
           <Button
             variant="outline"
@@ -47,8 +47,8 @@ const SecondStep = ({ regionHighlights, dailyPlanId }: SecondStepProps) => {
         </div>
       </StepHeader>
       <StepContentWrapper>
-        <div className="py-8">
-          <Carousel className="w-full max-w-[650px]">
+        <div className="flex-1 py-8">
+          <Carousel className="sm:max-w-full">
             <CarouselContent>
               {regionHighlights.map(
                 ({
@@ -59,7 +59,7 @@ const SecondStep = ({ regionHighlights, dailyPlanId }: SecondStepProps) => {
                   duration,
                   title,
                 }) => (
-                  <CarouselItem key={id} className="basis-1/3">
+                  <CarouselItem key={id} className="basis-1/2 md:basis-1/3">
                     <Card isCuratorsPick={isCuratorsPick}>
                       <CardImage imgUrl={imgUrl} />
                       <CardContent>
@@ -83,3 +83,27 @@ const SecondStep = ({ regionHighlights, dailyPlanId }: SecondStepProps) => {
 };
 
 export default SecondStep;
+
+{
+  /* <Carousel className="max-w-[400px] sm:max-w-[650px]">
+  <CarouselContent>
+    {regionHighlights.map(
+      ({ id, imgUrl, isCuratorsPick, desription, duration, title }) => (
+        <CarouselItem key={id} className="basis-1/2 md:basis-1/3">
+          <Card isCuratorsPick={isCuratorsPick}>
+            <CardImage imgUrl={imgUrl} />
+            <CardContent>
+              <CardTitle title={title} />
+              <div className="subheadline">
+                {joinDescription({ arr: [duration, desription] })}
+              </div>
+            </CardContent>
+          </Card>
+        </CarouselItem>
+      ),
+    )}
+  </CarouselContent>
+  <CarouselPrevious />
+  <CarouselNext />
+</Carousel>; */
+}

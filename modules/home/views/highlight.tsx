@@ -12,10 +12,10 @@ export const Highlight = ({ comment, user }: Props) => {
   const { avatarUrl, name, role } = user;
 
   return (
-    <div className="mb-12 flex flex-col gap-4">
-      <div className="flex items-center justify-between">
+    <section className="mb-12 flex flex-col gap-4">
+      <div className="flex items-center justify-between gap-4">
         <h3 className="text-3xl font-semibold">Iceland’s Highlights</h3>
-        <div className="flex gap-2.5">
+        <div className="flex flex-wrap justify-end gap-2.5 md:flex-row">
           <Button variant="outline" className="title-base rounded-lg" size="sm">
             <Bookmark className="mr-2 h-4 w-4" /> Add to wishlist
           </Button>
@@ -35,6 +35,6 @@ export const Highlight = ({ comment, user }: Props) => {
         </div>
       </div>
       <div className="text-base font-normal">{comment}</div>
-    </div>
+    </section>
   );
 };

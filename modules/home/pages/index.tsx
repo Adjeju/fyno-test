@@ -23,7 +23,7 @@ const { endDate, from, peopleCount, startDate, to } = itineraryPlanner;
 
 export const HomePage = () => {
   return (
-    <main className="mx-auto w-[761px] p-8">
+    <main className="p-8 md:mx-auto md:w-[761px]">
       <TopPanel />
       <Galery images={images} mainImageUrl={mainImageUrl} />
       <ItineraryInfo
@@ -39,7 +39,7 @@ export const HomePage = () => {
         to={to}
         peopleCount={peopleCount}
       />
-      <div id="itinerary" className="flex flex-col gap-4">
+      <section id="itinerary" className="flex flex-col gap-4">
         {itinerarys.map((itinerary, idx) => (
           <ItineraryStepper
             key={itinerary.id}
@@ -47,7 +47,7 @@ export const HomePage = () => {
             itinerary={itinerary}
           />
         ))}
-      </div>
+      </section>
       <DailyPlanDialog />
     </main>
   );

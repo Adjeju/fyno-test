@@ -18,7 +18,7 @@ export const ItineraryStepper = ({ firstNode, itinerary }: Props) => {
         dailyPlanId={dailyPlanId}
         regionHighlights={regionHighlights}
       />
-      <ThirdStep hotels={hotels} />
+      {/* <ThirdStep hotels={hotels} /> */}
     </Stepper>
   );
 };

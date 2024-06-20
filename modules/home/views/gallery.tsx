@@ -9,7 +9,7 @@ type Props = {
 };
 
 export const Galery = ({ mainImageUrl, images }: Props) => (
-  <div className="relative mb-6 grid h-[292px] grid-cols-2 gap-1">
+  <section className="relative mb-6 grid h-[292px] grid-cols-2 gap-1">
     <Button
       variant="outline"
       className="absolute bottom-4 right-4 z-10 rounded-[40px] border-none bg-[rgba(136,_136,_136,_0.3)] font-semibold text-white backdrop-blur"
@@ -42,5 +42,5 @@ export const Galery = ({ mainImageUrl, images }: Props) => (
         </div>
       ))}
     </div>
-  </div>
+  </section>
 );

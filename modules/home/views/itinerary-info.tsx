@@ -7,8 +7,8 @@ type Props = {
 };
 
 export const ItineraryInfo = ({ duration, exploration, fligth }: Props) => (
-  <div className="mb-12 flex items-center justify-between rounded-2xl border p-6">
-    <div className="flex gap-16">
+  <section className="mb-12 flex items-center justify-between rounded-2xl border p-6">
+    <div className="flex flex-col gap-3 md:flex-row md:gap-16">
       <div className="flex flex-col">
         <div className="text-light-secondary">Trip duration</div>
         <div className="font-semibold">
@@ -31,5 +31,5 @@ export const ItineraryInfo = ({ duration, exploration, fligth }: Props) => (
         View internatory
       </a>
     </Button>
-  </div>
+  </section>
 );
